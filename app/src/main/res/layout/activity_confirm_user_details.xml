@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGrey">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/White"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:id="@+id/relLayout1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Personal Details"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorBlack"
+                    android:id="@+id/broadcast_title"/>
+                <RelativeLayout
+                    android:id="@+id/relLay2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/broadcast_title"
+                    android:background="@drawable/grey_border">
+
+                    <EditText
+                        android:id="@+id/txtUname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Customer Name"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="10dp"
+                        android:textIsSelectable="false"
+                        android:inputType="none"
+                        android:background="@drawable/white_onclick_grey"
+                        android:textSize="18sp"/>
+
+                    <EditText
+                        android:id="@+id/txtUphone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtUname"
+                        android:hint="Your Phone Number"
+                        android:textSize="18sp"
+                        android:background="@drawable/white_onclick_grey"
+                        android:inputType="phone"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="10dp"/>
+
+                    <EditText
+                        android:id="@+id/txtUstreetname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtUphone"
+                        android:hint="Street Name"
+                        android:textSize="18sp"
+                        android:background="@drawable/white_onclick_grey"
+                        android:inputType="textAutoComplete"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="10dp"/>
+
+                    <EditText
+                        android:id="@+id/txtUBoxno"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtUstreetname"
+                        android:hint="Postal Address"
+                        android:textSize="18sp"
+                        android:background="@drawable/white_onclick_grey"
+                        android:inputType="textPostalAddress"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="10dp"/>
+
+                    <EditText
+                        android:id="@+id/txtUemail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtUBoxno"
+                        android:hint="Contact Email"
+                        android:textSize="18sp"
+                        android:background="@drawable/white_onclick_grey"
+                        android:inputType="textEmailAddress"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"/>
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/relLay2"
+                    android:layout_marginTop="10dp"
+                    android:text="Order Details"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorBlack"
+                    android:id="@+id/order_details"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/relLayout2"
+                    android:layout_below="@id/order_details"
+                    android:background="@drawable/grey_border">
+
+                    <EditText
+                        android:id="@+id/txtUamount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Total Amount"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="10dp"
+                        android:textIsSelectable="false"
+                        android:inputType="none"
+                        android:background="@drawable/white_onclick_grey"
+                        android:textSize="18sp"/>
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Select Payment Method"
+                        android:layout_below="@+id/txtUamount"
+                        android:textSize="18sp"
+                        android:id="@+id/txtUpayementMethod"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/white_onclick_grey" />
+
+                    <EditText
+                        android:id="@+id/txtUdate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtUpayementMethod"
+                        android:hint="Select Delivery Date"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/white_onclick_grey"
+                        android:textSize="15sp"/>
+
+                    <EditText
+                        android:id="@+id/txtUdeliverymethod"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtUdate"
+                        android:text="Delivery Method"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="10dp"
+                        android:textIsSelectable="false"
+                        android:inputType="none"
+                        android:background="@drawable/white_onclick_grey"
+                        android:textSize="18sp"
+                        android:layout_marginBottom="10dp"/>
+
+
+                </RelativeLayout>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Finish"
+                    android:id="@+id/btn_finish_checkout"
+                    android:layout_below="@+id/relLayout2"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginTop="5dp"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_margin="0dp"
+    android:layout_height="match_parent"
+    tools:context=".UsersFragment">
+
+    <RelativeLayout
+        android:id="@+id/lay1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_alignParentStart="true"
+            android:id="@+id/btnOrder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="5dp"
+            android:background="@color/primary_text"
+            android:text="Order"/>
+        <Button
+            android:layout_alignParentEnd="true"
+            android:id="@+id/btnCheckout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:drawableEnd="@drawable/ic_share"
+            android:layout_marginEnd="5dp"
+            android:text="Checkout"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/relLay1"
+        android:layout_below="@+id/lay1"
+        android:layout_width="match_parent"
+        android:background="@drawable/fragment_background"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_height="wrap_content">
+        <!-- TODO: Update blank fragment layout -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/cartList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+</RelativeLayout>

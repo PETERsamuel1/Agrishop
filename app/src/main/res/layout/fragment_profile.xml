@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="0dp"
+    tools:context=".ProfileFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/fragment_background"
+        android:layout_height="match_parent">
+    <!-- TODO: Update blank fragment layout -->
+
+        <RelativeLayout
+            android:id="@+id/horView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <HorizontalScrollView
+            android:id="@+id/horizontalView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true"
+            android:scrollbars="none"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:isScrollContainer="true">
+
+                <TextView
+                    android:background="@drawable/rounded_rectangle_default"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/profileLabel0"
+                    android:text="All"
+                    android:padding="8dp"
+                    android:autoSizeMaxTextSize="20dp"
+                    android:autoSizeMinTextSize="15dp"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:textColor="#FFF"
+                    android:layout_weight="1"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:background="@drawable/rounded_rectangle_green"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/profileLabel"
+                    android:text="Vegetables"
+                    android:padding="8dp"
+                    android:autoSizeMaxTextSize="20dp"
+                    android:autoSizeMinTextSize="15dp"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:textColor="#FFF"
+                    android:layout_weight="1"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginStart="1dp"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:background="@drawable/rounded_rectangle_green"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/usersLabel"
+                    android:text="Fruits"
+                    android:autoSizeMaxTextSize="20dp"
+                    android:autoSizeMinTextSize="15dp"
+                    android:textAlignment="center"
+                    android:padding="8dp"
+                    android:textColor="#FFF"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginStart="1dp"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:background="@drawable/rounded_rectangle_green"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/notificationLabel"
+                    android:text="Cereals"
+                    android:autoSizeMaxTextSize="20dp"
+                    android:autoSizeMinTextSize="15dp"
+                    android:textAlignment="center"
+                    android:padding="8dp"
+                    android:textStyle="bold"
+                    android:textColor="#FFF"
+                    android:layout_weight="1"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginStart="1dp"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:background="@drawable/rounded_rectangle_green"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/txtLegumes"
+                    android:text="Legumes"
+                    android:autoSizeMaxTextSize="20dp"
+                    android:autoSizeMinTextSize="15dp"
+                    android:textAlignment="center"
+                    android:padding="8dp"
+                    android:textStyle="bold"
+                    android:textColor="#FFF"
+                    android:layout_weight="1"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginStart="1dp"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:background="@drawable/rounded_rectangle_green"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/txtSalads"
+                    android:text="Salads"
+                    android:autoSizeMaxTextSize="20dp"
+                    android:autoSizeMinTextSize="15dp"
+                    android:textAlignment="center"
+                    android:padding="8dp"
+                    android:textStyle="bold"
+                    android:textColor="#FFF"
+                    android:layout_weight="1"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginStart="1dp"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:background="@drawable/rounded_rectangle_green"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/txtTubers"
+                    android:text="Tubers"
+                    android:autoSizeMaxTextSize="20dp"
+                    android:autoSizeMinTextSize="15dp"
+                    android:textAlignment="center"
+                    android:padding="8dp"
+                    android:textStyle="bold"
+                    android:textColor="#FFF"
+                    android:layout_weight="1"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginStart="1dp"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:background="@drawable/rounded_rectangle_green"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/txtNuts"
+                    android:text="Nuts"
+                    android:autoSizeMaxTextSize="20dp"
+                    android:autoSizeMinTextSize="15dp"
+                    android:textAlignment="center"
+                    android:padding="8dp"
+                    android:textStyle="bold"
+                    android:textColor="#FFF"
+                    android:layout_weight="1"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginStart="1dp"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:background="@drawable/rounded_rectangle_green"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/txtSoya"
+                    android:text="Soya"
+                    android:autoSizeMaxTextSize="20dp"
+                    android:autoSizeMinTextSize="15dp"
+                    android:textAlignment="center"
+                    android:padding="8dp"
+                    android:textStyle="bold"
+                    android:textColor="#FFF"
+                    android:layout_weight="1"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginStart="1dp"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:background="@drawable/rounded_rectangle_green"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/txtBeans"
+                    android:text="Beans"
+                    android:autoSizeMaxTextSize="20dp"
+                    android:autoSizeMinTextSize="15dp"
+                    android:textAlignment="center"
+                    android:padding="8dp"
+                    android:textStyle="bold"
+                    android:textColor="#FFF"
+                    android:layout_weight="1"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginStart="1dp"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:background="@drawable/rounded_rectangle_green"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/txtMaize"
+                    android:text="Maize"
+                    android:autoSizeMaxTextSize="20dp"
+                    android:autoSizeMinTextSize="15dp"
+                    android:textAlignment="center"
+                    android:padding="8dp"
+                    android:textStyle="bold"
+                    android:textColor="#FFF"
+                    android:layout_weight="1"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+        </HorizontalScrollView>
+            <TextView
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:background="@drawable/half_circle"
+                android:text="Scroll"/>
+        </RelativeLayout>
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/horView">
+            <RelativeLayout
+                android:id="@+id/layoutlist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/mostViewedProductList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_below="@+id/mostViewedProductList"
+                    android:id="@+id/productsList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"/>
+            </RelativeLayout>
+        </androidx.core.widget.NestedScrollView>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp">
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fb"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_marginBottom="@dimen/fab_margin_bottom"
+                android:layout_marginEnd="@dimen/fab_margin_right"
+                app:srcCompat="@drawable/ic_add_black_24dp"
+                tools:ignore="VectorDrawableCompat" />
+        </RelativeLayout>
+    </RelativeLayout>
+</FrameLayout>

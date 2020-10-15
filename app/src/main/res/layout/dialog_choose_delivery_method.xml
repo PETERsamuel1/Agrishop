@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    android:padding="15dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select your preferred Delivery Method"
+            android:textSize="18sp"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"
+            android:id="@+id/dialogTitle"/>
+
+        <RadioGroup
+            android:id="@+id/rgChoose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dialogTitle"
+            android:layout_marginTop="10dp">
+
+            <RadioButton
+                android:id="@+id/radioBtnHomeDelivery"
+                android:layout_marginStart="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Home Delivery"
+                android:textSize="16sp"
+                android:textColor="@color/colorBlack"/>
+
+            <RadioButton
+                android:id="@+id/radioBtnCollect"
+                android:layout_marginStart="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pick at Collection Center"
+                android:textSize="16sp"
+                android:textColor="@color/colorBlack"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/txtDMcancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rgChoose"
+            android:layout_marginTop="20dp"
+            android:text="Cancel"
+            android:textSize="18sp"
+            android:textColor="@color/colorBlack"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="10dp"/>
+
+        <TextView
+            android:id="@+id/txtConfirm"
+            android:layout_below="@+id/rgChoose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Confirm"
+            android:textSize="18sp"
+            android:textColor="@color/colorBlack"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginEnd="10dp"/>
+    </RelativeLayout>
+</RelativeLayout>

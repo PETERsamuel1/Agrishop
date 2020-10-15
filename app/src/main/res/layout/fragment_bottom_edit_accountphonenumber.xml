@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="8dp"
+    android:paddingTop="8dp"
+    android:background="@drawable/grey_border">
+
+    <TextView
+        android:id="@+id/titlename"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Change your phone number"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <RelativeLayout
+        android:id="@+id/relf1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titlename"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/currentProfName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Your current phone number"
+            android:textSize="16sp"
+            android:layout_marginStart="5dp"/>
+
+        <TextView
+            android:id="@+id/txtProfPhoneNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/currentProfName"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/textview_background"
+            android:padding="8dp"
+            android:layout_marginTop="5dp"
+            android:text="phone number"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/relf2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relf1"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/newProfphonenumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Set your new phone number"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/editTextProfphonenumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/newProfphonenumber"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginTop="5dp"
+            android:textAlignment="center"
+            android:text="phone number"
+            android:padding="8dp"
+            android:background="@drawable/input_outline_dialog_text"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+    <Button
+        android:id="@+id/btnProfPhoneSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relf2"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="20dp"
+        android:text="Save"
+        android:background="@color/colorPrimary"/>
+
+    <ProgressBar
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/changephonenoprogressBar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:visibility="invisible"/>
+
+</RelativeLayout>

@@ -1,0 +1,47 @@
+<androidx.appcompat.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/toolbar"
+    android:background="?attr/colorPrimaryDark"
+    android:minHeight="?attr/actionBarSize"
+    android:fitsSystemWindows="true"
+    app:menu="@menu/top_app_bar"
+    app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+    >
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/mainToolbarImageView"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/profile_thumbnail"
+            android:layout_gravity="start"
+            app:civ_border_width="1dp"
+            app:civ_border_color="#FFF"/>
+
+        <TextView
+            android:id="@+id/mainToolbarTitle"
+            android:layout_marginStart="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:text="@string/page_title" />
+
+        <androidx.appcompat.widget.SearchView
+            android:layout_centerVertical="true"
+            android:id="@+id/mainToolbarSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            />
+    </RelativeLayout>
+</androidx.appcompat.widget.Toolbar>
